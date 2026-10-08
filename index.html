@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rhetorical Appeals: Ethos, Pathos & Logos</title>
+<style>
+:root{--bg:#f6f8fc;--cd:#fff;--tx:#1d2433;--mu:#5b6579;--bd:#d9dfec;--e:#2b6cb0;--p:#d6336c;--l:#2f9e44;--eb:#e4effb;--pb:#fde6ef;--lb:#e3f5e8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141f;--cd:#1a2030;--tx:#eef1f8;--mu:#a3adc2;--bd:#2d3650;--e:#6aaaf0;--p:#f06a9b;--l:#5cc674;--eb:#16283f;--pb:#3a1828;--lb:#143222}}
+:root[data-theme="dark"]{--bg:#10141f;--cd:#1a2030;--tx:#eef1f8;--mu:#a3adc2;--bd:#2d3650;--e:#6aaaf0;--p:#f06a9b;--l:#5cc674;--eb:#16283f;--pb:#3a1828;--lb:#143222}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:860px;margin:auto;padding:14px}
+h1{margin:6px 0;font-size:1.9rem}h2{margin:.2em 0 .5em}
+.mu{color:var(--mu)}small{display:block;color:var(--mu);font-size:.8rem}
+.hd{background:linear-gradient(135deg,var(--e),var(--p),var(--l));color:#fff;border-radius:18px;padding:18px}
+.hd h1,.hd p{margin:.2em 0;color:#fff}.hd .tag{display:inline-block;background:rgba(0,0,0,.28);border-radius:20px;padding:2px 10px;font-size:.8rem}
+.nv{display:flex;gap:6px;overflow-x:auto;padding:12px 0}
+.nv button{flex:0 0 auto;border:2px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:20px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.nv button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:16px;padding:16px;margin:10px 0}
+.sec{display:none}.sec.on{display:block}
+.btn{background:var(--tx);color:var(--bg);border:0;border-radius:12px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer;margin:8px 6px 0 0}
+.btn.alt{background:var(--cd);color:var(--tx);border:2px solid var(--bd)}
+.ac{border:2px solid var(--c);border-radius:16px;margin:10px 0;overflow:hidden;background:var(--cd)}
+.ah{width:100%;display:flex;gap:12px;align-items:center;text-align:left;border:0;background:var(--cb);color:var(--tx);font:inherit;padding:14px;cursor:pointer}
+.ah b{font-size:1.25rem;color:var(--c)}.ic{font-size:2rem}.ar{margin-left:auto;transition:.2s}
+.ac.open .ar{transform:rotate(180deg)}.ab{display:none;padding:4px 16px 16px}.ac.open .ab{display:block}
+.chip{display:inline-block;border:2px solid var(--c,var(--bd));background:var(--cb,var(--cd));border-radius:20px;padding:2px 10px;margin:3px 3px 3px 0;font-size:.88rem}
+mark{background:var(--cb,#fff3a0);color:inherit;border-bottom:3px solid var(--c,#e0a800);padding:0 2px;border-radius:3px}
+.me{--c:var(--e);--cb:var(--eb)}.mp{--c:var(--p);--cb:var(--pb)}.ml{--c:var(--l);--cb:var(--lb)}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px;border:2px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:14px;font:inherit;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--tx)}.opt:disabled{cursor:default}
+.tri{width:100%;max-width:440px;display:block;margin:auto}.tri g{cursor:pointer}
+.snt{cursor:pointer;padding:2px 3px;border-radius:6px;border-bottom:2px dashed var(--bd)}.snt:hover{background:var(--bd)}
+.snt.sel{outline:3px solid var(--tx)}.snt.done{border-bottom:3px solid var(--c);background:var(--cb);cursor:default}
+.pk button{margin:4px 6px 4px 0;border:2px solid var(--c);background:var(--cb);color:var(--tx);border-radius:12px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.bar{height:10px;background:var(--bd);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--e),var(--l));transition:.3s}
+.op{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 13px;border:2px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:12px;font:inherit;cursor:pointer}
+.op.ok{border-color:var(--l);background:var(--lb)}.op.no{border-color:var(--p);background:var(--pb)}
+.qq{font-size:1.1rem;font-weight:600}.fbx{padding:10px 12px;border-radius:12px;margin-top:8px}.fbx.g{background:var(--lb)}.fbx.b{background:var(--pb)}
+.shake{animation:sh .3s}@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+table{width:100%;border-collapse:collapse;font-size:.92rem}td,th{border:1px solid var(--bd);padding:8px;vertical-align:top}
+.big{font-size:2.4rem;text-align:center}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="hd">
+    <span class="tag">Florida B.E.S.T. · ELA.6.R.3.4 · Identify rhetorical appeals in a text</span>
+    <h1>🎯 Rhetorical Appeals</h1>
+    <p>Ethos · Pathos · Logos: the three tools authors use to convince you.</p>
+    <p><b>I can</b> identify ethos, pathos, and logos in a text and explain how I know.</p>
+  </div>
+  
+  <div class="nv" id="nv"></div>
+
+  <!-- Step 1: Hook -->
+  <div class="sec" id="s0">
+    <div class="cd">
+      <h2>Step 1 · Which one convinces YOU?</h2>
+      <p>The principal is deciding whether to add <b>10 extra minutes of recess</b>. Three students speak. Tap the speech that convinces you most.</p>
+      <div id="hk"></div>
+      <div id="hr"></div>
+    </div>
+  </div>
+
+  <!-- Step 2: Learn -->
+  <div class="sec" id="s1">
+    <div class="cd">
+      <h2>Step 2 · Meet the Three Appeals</h2>
+      <p><b>Rhetoric</b> is the art of persuading. A <b>rhetorical appeal</b> is a way an author gets the audience to say <i>"yes, I agree."</i> Tap each card to open it. <b id="oc">Opened 0/3</b></p>
+      <div id="cards"></div>
+    </div>
+  </div>
+
+  <!-- Step 3: Triangle -->
+  <div class="sec" id="s2">
+    <div class="cd">
+      <h2>Step 3 · The Rhetorical Triangle</h2>
+      <p>Strong writers balance all three. Tap a corner.</p>
+      <svg class="tri" viewBox="0 0 400 300" role="img" aria-label="Triangle with Ethos, Pathos and Logos at the corners">
+        <polygon points="200,40 50,250 350,250" style="fill:var(--cd);stroke:var(--bd);stroke-width:4"/>
+        <text x="200" y="165" text-anchor="middle" style="fill:var(--mu);font-weight:700">PERSUADE</text>
+        <g data-k="e"><circle cx="200" cy="40" r="34" style="fill:var(--e)"/><text x="200" y="47" text-anchor="middle" fill="#fff" font-weight="700" font-size="18">Ethos</text></g>
+        <g data-k="p"><circle cx="50" cy="250" r="34" style="fill:var(--p)"/><text x="50" y="257" text-anchor="middle" fill="#fff" font-weight="700" font-size="17">Pathos</text></g>
+        <g data-k="l"><circle cx="350" cy="250" r="34" style="fill:var(--l)"/><text x="350" y="257" text-anchor="middle" fill="#fff" font-weight="700" font-size="18">Logos</text></g>
+      </svg>
+      <div id="tp" class="cd" style="margin-top:6px">👆 Tap a corner to see its question and an example.</div>
+      <h3>Worked example: one speech, three appeals</h3>
+      <p><span class="mu">Read the speech. Each color is a different appeal.</span></p>
+      <p><mark class="me">As a mother of three</mark>, <mark class="mp">I have felt the heartbreak of a child going to bed hungry.</mark> <mark class="ml">One in five kids in our town does not get enough to eat</mark>, so we must hold a food drive.</p>
+      <span class="chip me">Ethos: her experience as a parent builds trust</span>
+      <span class="chip mp">Pathos: "heartbreak" and "hungry child" create feeling</span>
+      <span class="chip ml">Logos: a statistic gives proof</span>
+    </div>
+  </div>
+
+  <!-- Step 4: Spot -->
+  <div class="sec" id="s3">
+    <div class="cd">
+      <h2>Step 4 · Spot the Appeals</h2>
+      <p>Pick a passage. <b>Tap a sentence</b>, then choose the appeal it uses. Look for clue words! <span class="mu">(Practice passages are made up.)</span></p>
+      <div id="pt" class="nv"></div>
+      <p id="pi" class="mu"></p>
+      <p id="ps" style="font-size:1.08rem;line-height:2"></p>
+      <div id="pk" class="pk"></div>
+      <div id="pf"></div>
+    </div>
+  </div>
+
+  <!-- Step 5: Sort -->
+  <div class="sec" id="s4">
+    <div class="cd">
+      <h2>Step 5 · Sort It!</h2>
+      <p>Topic: <b>Should school start later?</b> Which appeal does each sentence use?</p>
+      <div id="so"></div>
+    </div>
+  </div>
+
+  <!-- Step 6: Quiz -->
+  <div class="sec" id="s5">
+    <div class="cd">
+      <h2>Step 6 · Show What You Know</h2>
+      <div id="qz"></div>
+    </div>
+  </div>
+
+  <!-- Step 7: Review / Cheat Sheet -->
+  <div class="sec" id="s6">
+    <div class="cd">
+      <h2>Step 7 · Cheat Sheet</h2>
+      <table>
+        <tr><th>Appeal</th><th>Ask yourself</th><th>Clues</th></tr>
+        <tr class="me"><td><b>🎓 Ethos</b><br>credibility, ethics</td><td>Can I trust this person?</td><td>experience, job title, experts, "it's the right thing"</td></tr>
+        <tr class="mp"><td><b>❤️ Pathos</b><br>emotion</td><td>How does this make me feel?</td><td>"Imagine…", feeling words, vivid images, sad or happy stories</td></tr>
+        <tr class="ml"><td><b>🧠 Logos</b><br>logic, reason</td><td>Does this make sense? Where's the proof?</td><td>facts, numbers, studies, "because / therefore"</td></tr>
+      </table>
+      <h3>3 steps to identify an appeal</h3>
+      <ol>
+        <li><b>Read</b> the sentence.</li>
+        <li><b>Ask</b> the question: trust? feeling? proof?</li>
+        <li><b>Prove it</b> with a clue from the text.</li>
+      </ol>
+      <h3>Sentence frame for explaining</h3>
+      <div class="cd" style="background:var(--eb)">The author uses <b>[ethos / pathos / logos]</b> when they write "<b>[quote the clue]</b>." This appeals to the reader's <b>[trust / feelings / reason]</b> because <b>[explain]</b>.</div>
+      <p><b>Remember:</b> one sentence can use more than one appeal, and an author's goal is always to <b>persuade</b>.</p>
+      <p class="mu"><small>Teacher note: ELA.6.R.3.4 clarification: students identify the appeals of logos, ethos, and pathos. Rhetorical devices come in later grades.</small></p>
+    </div>
+  </div>
+
+  <div>
+    <button class="btn alt" id="bk">← Back</button>
+    <button class="btn" id="nx">Next →</button>
+  </div>
+</div>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const AP={
+  e:{n:'Ethos',t:'Credibility & character',i:'🎓',q:'Can I trust this person?',d:'An appeal to <b>credibility, character, or moral principles</b>. The author shows they are trustworthy, experienced, or fair, or points to what is <i>right</i>.',m:'<b>E</b>thos = <b>E</b>xpert and <b>E</b>thics',w:['As a doctor…','I have 10 years of experience','experts agree','it is our duty','honest · fair · responsible'],x:'<mark>As a veterinarian with 15 years of experience</mark>, I urge you to adopt from a shelter.'},
+  p:{n:'Pathos',t:'Emotion',i:'❤️',q:'How does this make me feel?',d:'An appeal to <b>emotion</b>. The author uses vivid images, stories, and feeling words (sad, scared, proud, hopeful) to make you <i>care</i>.',m:'<b>P</b>athos = <b>P</b>assion and <b>P</b>ity (feelings!)',w:['Imagine…','heartbreaking','lonely · terrified · tears','proud · hopeful','vivid sensory details'],x:'<mark>Imagine a lonely puppy shivering in a cold cage</mark>, waiting for someone to take him home.'},
+  l:{n:'Logos',t:'Logic & reason',i:'🧠',q:'Does this make sense? Where is the proof?',d:'An appeal to <b>logic or reason</b>. The author uses <b>facts, statistics, evidence, and clear reasoning</b>.',m:'<b>L</b>ogos = <b>L</b>ogic (sounds like "<b>lo</b>gical")',w:['studies show','8 out of 10','because · therefore · so','percent · numbers','evidence and examples'],x:'<mark>A survey of 200 students found that 8 out of 10 focus better after recess</mark>, so recess helps learning.'}
+};
+const K=['e','p','l'],cv=k=>`--c:var(--${k});--cb:var(--${k}b)`;
+
+// Navigation Setup
+const ST=['Hook','Learn','Triangle','Spot','Sort','Quiz','Review'];
+let cur=0;
+
+function go(i){
+  cur=Math.max(0,Math.min(6,i));
+  $$('.sec').forEach((s,n)=>s.classList.toggle('on',n==cur));$$
+('#nv button').forEach((b,n)=>b.classList.toggle('on',n==cur));
+  $('#bk').style.visibility=cur?'visible':'hidden';
+  $('#nx').style.visibility=cur<6?'visible':'hidden';
+  window.scrollTo(0,0);
+}
+
+$('#nv').innerHTML=ST.map((s,i)=>`<button>${i+1}. ${s}</button>`).join('');
+$$('#nv button').forEach((b,i)=>b.onclick=()=>go(i));
+$('#bk').onclick=()=>go(cur-1);
+$('#nx').onclick=()=>go(cur+1);
+
+// Step 1: Hook
+const H=[
+  ['Maya','e',"I'm the student council president, and I've spent a year studying our school schedule. Trust me: more recess works."],
+  ['Jordan','p','Picture kids stuck at desks, restless and sad, while the sunshine they love waits just outside the window.'],
+  ['Sam','l','A survey of 200 students found that 8 out of 10 pay better attention after recess, so extra time helps learning.']
+];
+$('#hk').innerHTML=H.map((h,i)=>`<button class="opt" data-i="${i}"><b>${h[0]}:</b> "${h[2]}"</button>`).join('');
+$$('#hk .opt').forEach(b=>b.onclick=()=>{   const c=H[b.dataset.i];   $$
+('#hk .opt').forEach((x,n)=>{
+    x.disabled=1;
+    x.style.cssText=cv(H[n][1])+';border-color:var(--c);background:var(--cb)';
+    x.insertAdjacentHTML('beforeend',`<br><span class="chip" style="${cv(H[n][1])}">${AP[H[n][1]].i} ${AP[H[n][1]].n}</span>`);
+  });
+  $('#hr').innerHTML=`<div class="cd"><b>You picked ${c[0]}, who used ${AP[c[1]].n}!</b><p>Every speaker used a <i>different persuasion tool</i>. Maya made you <b>trust</b> her (ethos). Jordan made you <b>feel</b> something (pathos). Sam gave <b>proof</b> (logos). Next, you'll learn to spot all three.</p><button class="btn" onclick="go(1)">Learn the appeals →</button></div>`;
+});
+
+// Step 2: Cards
+let opened=new Set();
+$('#cards').innerHTML=K.map(k=>{
+  const a=AP[k];
+  return `<div class="ac" data-k="${k}" style="${cv(k)}"><button class="ah" aria-expanded="false"><span class="ic">${a.i}</span><span><b>${a.n}</b><small>${a.t} · "${a.q}"</small></span><span class="ar">▾</span></button><div class="ab"><p>${a.d}</p><p>💡 <b>Memory trick:</b> ${a.m}</p><p><b>Ask yourself:</b> <i>${a.q}</i></p><p><b>Clue words and ideas:</b><br>${a.w.map(w=>`<span class="chip">${w}</span>`).join('')}</p><p><b>Example:</b> ${a.x}</p></div></div>`;
+}).join('');
+$$('.ac').forEach(c=>$('.ah',c).onclick=()=>{
+  const o=c.classList.toggle('open');
+  $('.ah',c).setAttribute('aria-expanded',o);
+  opened.add(c.dataset.k);
+  $('#oc').textContent='Opened '+opened.size+'/3'+(opened.size==3?' ✅':''); });  // Step 3: Triangle $$('.tri g').forEach(g=>g.onclick=()=>{
+  const k=g.dataset.k,a=AP[k];
+  $('#tp').style.cssText=cv(k)+';border:2px solid var(--c);background:var(--cb)';
+  $('#tp').innerHTML=`<b>${a.i} ${a.n}: ${a.t}</b><br>${a.d}<br><b>Ask:</b> ${a.q}<br><b>Example:</b> ${a.x}`;
+});
+
+// Step 4: Spot
+const PS=[
+  {t:'The Crosswalk',i:'A crossing guard is asking the city for a new crosswalk.',s:[['I have been a school crossing guard for twelve years, and I have helped thousands of students get to class safely.','e','She shares her <b>12 years of experience</b>, so we trust her.'],['Last month, a little girl froze in the street, shaking with fear while cars honked.','p','A <b>vivid story</b> with feeling words ("shaking with fear") makes us feel worried.'],['Our city traffic report shows that 7 out of 10 crashes near schools happen where there is no crosswalk.','l','A <b>statistic</b> from a report is evidence.'],['It is our responsibility to protect children, and doing what is right matters.','e','It appeals to <b>moral principles</b>: responsibility and what is right.'],['Picture the relief on every parent\'s face when their child walks home safely.','p','"Picture…" and "relief" paint an <b>emotional image</b>.'],['Because a crosswalk costs less than repairing one crash, it is the smart choice.','l','"Because… so" is <b>logical reasoning</b> comparing costs.']]},
+  {t:'Save the Manatees',i:'A student is giving a speech asking the county to create slow-speed boat zones.',s:[['As a marine biologist who has studied manatees for fifteen years, I can tell you they need our help.','e','Her <b>fifteen years of expert work</b> make her credible.'],['Imagine a gentle manatee mother nudging her injured calf toward the surface, struggling to breathe.','p','"Imagine" and a <b>sad, vivid image</b> make us feel sympathy.'],['Our county wildlife report shows that boat strikes injured 40 manatees last year, and slow-speed zones cut those injuries in half.','l','Numbers from a report are <b>evidence</b>.'],['We have a duty to protect the animals that share our home, because it is the honest and fair thing to do.','e','"Duty," "honest," and "fair" appeal to <b>moral principles</b>.'],['It breaks my heart to see these gentle giants scarred and frightened.','p','"Breaks my heart," "scarred," and "frightened" are <b>feeling words</b>.'],['Since fewer boat strikes mean more manatees survive, slower boat zones are a logical solution.','l','"Since… mean… so" is a <b>chain of reasoning</b>.']]},
+  {t:'Healthy Lunches',i:'A cafeteria manager is asking the school board for healthier lunch choices.',s:[['I have managed school cafeterias for twenty years and earned a nutrition certificate.','e','<b>Experience and a certificate</b> show she knows the topic.'],['Nobody wants to see a hungry, tired kid slumped over a desk, too weak to smile.','p','A <b>sad picture</b> with feeling words makes us care.'],['In a school survey, 9 out of 10 students who ate fruit at lunch said they felt more energetic in class.','l','<b>Survey results</b> are evidence.'],['As a parent myself, I would never serve our students anything I would not give my own child.','e','Being a parent who <b>sticks to her values</b> builds trust and shows character.'],['Imagine the pride a child feels when she finishes a lunch she helped choose.','p','"Imagine" and "pride" create a <b>happy feeling</b>. Pathos can be positive too!'],['If students eat healthier meals, they will have more energy; therefore healthier lunches lead to better learning.','l','"If… therefore" is <b>logical reasoning</b>.']]}
+];
+let sel=-1,sd=0,pi=0;
+
+function loadP(n){
+  pi=n;sel=-1;sd=0;
+  const P=PS[n];
+  $('#pi').textContent=P.i;$('#pk').innerHTML='';$('#pf').innerHTML='';   $$('#pt button').forEach((b,j)=>b.classList.toggle('on',j==n));
+  $('#ps').innerHTML=P.s.map((s,i)=>`<span class="snt" data-i="${i}">${s[0]}</span> `).join('');
+  $$('.snt').forEach(s=>s.onclick=()=>{     if(s.classList.contains('done'))return;     $$
+('.snt').forEach(x=>x.classList.remove('sel'));
+    s.classList.add('sel');
+    sel=+s.dataset.i;
+    $('#pk').innerHTML='<b>Which appeal?</b> '+K.map(k=>`<button data-k="${k}" style="${cv(k)}">${AP[k].i} ${AP[k].n}</button>`).join('');
+    $$('#pk button').forEach(b=>b.onclick=()=>{       const c=P.s[sel],el=$$
+('.snt')[sel];
+      if(b.dataset.k==c[1]){
+        el.classList.add('done');el.classList.remove('sel');el.style.cssText=cv(c[1]);sd++;
+        $('#pk').innerHTML='';
+        $('#pf').innerHTML=`<div class="fbx g">✅ <b>${AP[c[1]].n}!</b> ${c[2]}</div>`+(sd==P.s.length?`<div class="cd"><b>🎉 You found all six!</b> Notice the speaker used all three appeals together.</div>`+(n<PS.length-1?`<button class="btn" id="np">Next passage →</button>`:'<div class="cd"><b>🏅 All passages done!</b> Try the Sort step next.</div>'):'');
+        if($('#np'))$('#np').onclick=()=>loadP(n+1);
+      } else {
+        el.classList.add('shake');
+        setTimeout(()=>el.classList.remove('shake'),400);
+        $('#pf').innerHTML='<div class="fbx b">❌ Not quite. Reread and ask: <i>trust? feeling? proof?</i> Look for a clue word.</div>';
+      }
+    });
+  });
+}
+$('#pt').innerHTML=PS.map((p,i)=>`<button>${i+1}. ${p.t}</button>`).join('');
+$$('#pt button').forEach((b,i)=>b.onclick=()=>loadP(i));
+loadP(0);
+
+// Multiple Choice Handler
+function mc(id,items,done){
+  let i=0,s=0;
+  const el=$(id);
+  (function r(){
+    if(i>=items.length){
+      el.innerHTML=done(s,items.length)+'<button class="btn rt">↻ Try again</button>';
+      $('.rt',el).onclick=()=>{i=0;s=0;r()};
+      return;
+    }
+    const q=items[i];
+    el.innerHTML=`<div class="bar"><i style="width:${i/items.length*100}%"></i></div><p class="mu">Question ${i+1} of ${items.length} · Score ${s}</p><p class="qq">${q.q}</p>${q.o.map((o,j)=>`<button class="op" data-j="${j}">${o}</button>`).join('')}<div class="fb" aria-live="polite"></div>`;
+    $$('.op',el).forEach(b=>b.onclick=()=>{       const j=+b.dataset.j,ok=j==q.a;       if(ok)s++;       $$
+('.op',el).forEach((x,n)=>{x.disabled=1;if(n==q.a)x.classList.add('ok')});
+      if(!ok)b.classList.add('no');
+      $('.fb',el).innerHTML=`<div class="fbx ${ok?'g':'b'}"><b>${ok?'✅ Correct!':'❌ Not quite.'}</b> ${q.why}</div><button class="btn nx">${i+1<items.length?'Next →':'See results'}</button>`;
+      $('.nx',el).onclick=()=>{i++;r()};
+    });
+  })();
+}
+
+const A3=['🎓 Ethos','❤️ Pathos','🧠 Logos'];
+
+// Step 5: Sort Data
+const SO=[
+  ['"As a nurse for 20 years, I know why sleep matters."',0,'Her <b>experience</b> makes her credible.'],
+  ['"Students who sleep 9 hours score 15% higher on tests, a study found."',2,'A <b>statistic and a study</b> are evidence.'],
+  ['"Imagine the heartbreak of a sleepy kid who nods off during his favorite class."',1,'"Imagine" and "heartbreak" create <b>feeling</b>.'],
+  ['"Doing the right thing means giving every kid a fair chance to learn."',0,'It appeals to <b>moral principles</b> (fairness, right).'],
+  ['"Since later start times lead to more sleep, and more sleep leads to better grades, later starts improve grades."',2,'A step-by-step chain of <b>reasoning</b> (since… leads to…).'],
+  ['"The teary-eyed look on a tired child is something no parent should have to see."',1,'"Teary-eyed" is a <b>vivid image</b> meant to make you feel.'],
+  ['"Our principal, a respected educator, supports this plan."',0,'A respected expert backs it up, which builds <b>trust</b>.'],
+  ['"In a survey, three out of four teachers said students are less tired when school starts later."',2,'<b>Survey numbers</b> are evidence.']
+].map(x=>({q:x[0]+'<br><span class="mu">Which appeal?</span>',o:A3,a:x[1],why:x[2]}));
+
+mc('#so',SO,(s,n)=>`<div class="big">${s>=7?'🏆':s>=5?'👍':'📚'}</div><h3>${s}/${n}</h3><p>${s>=7?'Sorting superstar!':s>=5?'Good work. Review the clue words and try again.':'Revisit the Learn step, then try again.'}</p>`);
+
+// Step 6: Quiz Data
+const QZ=[
+  ['"Our team has built parks for 20 years. Trust us to build a great one here."',0,'Years of <b>experience</b> make the team credible: ethos.'],
+  ['"Tests showed that students who read 20 minutes a day scored 12 points higher."',2,'Test results are <b>evidence</b>: logos.'],
+  ['"Her tiny paws trembled as she watched the door, hoping someone would come."',1,'Vivid, sad imagery builds <b>feeling</b>: pathos.']
+].map(x=>({q:x[0]+'<br><span class="mu">Which appeal?</span>',o:A3,a:x[1],why:x[2]})).concat([
+  {q:'Which question helps you spot <b>logos</b>?',o:['Can I trust this person?','How does this make me feel?','Is there evidence that makes sense?'],a:2,why:'Logos is about <b>logic and proof</b>.'},
+  {q:'Why do authors use rhetorical appeals?',o:['To make the text longer','To persuade the audience','To tell a joke'],a:1,why:'Appeals are tools of <b>persuasion</b>.'},
+  {q:'"As a mother of three, I have felt the heartbreak of hungry kids. One in five children in our town goes hungry." Which appeals are used?',o:['Ethos only','Pathos only','All three: ethos, pathos, and logos'],a:2,why:'"Mother of three" = ethos, "heartbreak" = pathos, "one in five" = logos. Sentences can mix appeals!'},
+  {q:'"Imagine walking home in the dark, your heart pounding, with no lights." Which explanation is best?',o:['The author uses pathos because the vivid image makes readers feel scared.','The author uses logos because it has facts.','The author uses ethos because the author is an expert.'],a:0,why:'A strong answer names the appeal, <b>quotes a clue</b>, and explains the effect on the reader.'},
+  {q:'"As a lifeguard for ten years, I urge you to wear life jackets." Which explanation is best?',o:['The author uses pathos because it is scary.','The author uses ethos by sharing job experience, so readers trust the advice.','The author uses logos by using a statistic.'],a:1,why:'Ten years as a lifeguard shows <b>credibility</b>, which is ethos.'}
+]);
+
+mc('#qz',QZ,(s,n)=>`<div class="big">${s>=7?'🏆':s>=5?'👍':'📚'}</div><h3>${s}/${n}: ${s>=7?'Appeals Expert!':s>=5?'Almost there!':'Keep practicing!'}</h3><p>${s>=7?'You can identify ethos, pathos, and logos and explain how you know. Check the Review step to lock it in.':'Go back to the Learn step and the cheat sheet, then try again.'}</p>`);
+
+// Start at Step 1
+go(0);
+</script>
+</body>
+</html>
